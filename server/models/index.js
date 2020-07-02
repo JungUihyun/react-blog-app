@@ -31,5 +31,18 @@ db.sequelize.authenticate().then(() => {
     console.log('Unable to connect to the databse: ', err);
 });
 
+db.Teacher = require('./teacher')(sequelize, $equelize);
+db.Class = require('./class')(sequelize, $equelize);
+
+// N대 N 관게 (Teachers : Classes)
+db.Teacher.belongsToMany(db.Class, {
+    through : 'sceudle',
+    foreignKey : 'teacher_id'
+});
+db.Class.belongsToMany(db.Teacher, {
+    through : 'scedule',
+    foreignKey : 'class_id',
+});
+
 db.secret = "(9*)5$&!3%^0%^@@2$1!#5@!4";
 module.exports = db;
