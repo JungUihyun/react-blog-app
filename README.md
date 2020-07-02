@@ -1,4 +1,4 @@
-# 강의링크
+# 강의링크 - 중단
 ## https://blog.naver.com/PostView.nhn?blogId=sejun3278&logNo=221569414455&parentCategoryNo=&categoryNo=11&viewDate=&isShowPopularPosts=true&from=search
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
